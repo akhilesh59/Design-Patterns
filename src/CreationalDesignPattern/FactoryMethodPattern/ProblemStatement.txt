@@ -1,0 +1,2 @@
+You need a way to create objects without specifying the exact class of the object that will be created,
+like different shapes in a drawing app.

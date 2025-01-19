@@ -1,0 +1,21 @@
+classDiagram
+    class Component {
+        <<interface>>
+        +operation()
+        +add(Component)
+        +remove(Component)
+        +getChild(int)
+    }
+    class Leaf {
+        +operation()
+    }
+    class Composite {
+        -children: List~Component~
+        +operation()
+        +add(Component)
+        +remove(Component)
+        +getChild(int)
+    }
+    Component <|.. Leaf
+    Component <|.. Composite
+    Composite o-- Component

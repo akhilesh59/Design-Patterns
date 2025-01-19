@@ -1,0 +1,38 @@
+classDiagram
+    class AbstractFactory {
+        <<interface>>
+        +createChair() Chair
+        +createTable() Table
+    }
+    class ModernFactory {
+        +createChair() Chair
+        +createTable() Table
+    }
+    class VictorianFactory {
+        +createChair() Chair
+        +createTable() Table
+    }
+    class Chair {
+        <<interface>>
+        +hasLegs() bool
+        +sitOn() void
+    }
+    class Table {
+        <<interface>>
+        +hasLegs() bool
+        +putOn() void
+    }
+    class ModernChair {
+        +hasLegs() bool
+        +sitOn() void
+    }
+    class VictorianChair {
+        +hasLegs() bool
+        +sitOn() void
+    }
+    AbstractFactory <|.. ModernFactory
+    AbstractFactory <|.. VictorianFactory
+    Chair <|.. ModernChair
+    Chair <|.. VictorianChair
+    ModernFactory --> ModernChair
+    VictorianFactory --> VictorianChair

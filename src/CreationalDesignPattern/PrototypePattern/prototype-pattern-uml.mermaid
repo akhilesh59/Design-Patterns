@@ -1,0 +1,19 @@
+classDiagram
+    class Prototype {
+        <<interface>>
+        +clone() Prototype
+    }
+    class ConcretePrototype1 {
+        -field1: string
+        +clone() Prototype
+    }
+    class ConcretePrototype2 {
+        -field2: int
+        +clone() Prototype
+    }
+    class Client {
+        +operation(Prototype)
+    }
+    Prototype <|.. ConcretePrototype1
+    Prototype <|.. ConcretePrototype2
+    Client --> Prototype

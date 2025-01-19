@@ -1,0 +1,15 @@
+classDiagram
+    class Flyweight {
+        <<interface>>
+        +operation(extrinsicState)
+    }
+    class ConcreteFlyweight {
+        -intrinsicState
+        +operation(extrinsicState)
+    }
+    class FlyweightFactory {
+        -flyweights: Map
+        +getFlyweight(key)
+    }
+    Flyweight <|.. ConcreteFlyweight
+    FlyweightFactory --> Flyweight

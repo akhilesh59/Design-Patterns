@@ -1,0 +1,4 @@
+Suppose we are building a coffee shop application where customers can order different types of coffee.
+Each coffee can have various optional add-ons such as milk, sugar, whipped cream, etc.
+We want to implement a system where we can dynamically add these add-ons to a coffee order without
+modifying the coffee classes themselves.

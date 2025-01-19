@@ -1,0 +1,19 @@
+classDiagram
+    class AbstractClass {
+        <<abstract>>
+        +templateMethod() final
+        #step1() abstract
+        #step2() abstract
+        #hook()
+    }
+    class ConcreteClassA {
+        #step1()
+        #step2()
+    }
+    class ConcreteClassB {
+        #step1()
+        #step2()
+        #hook()
+    }
+    AbstractClass <|-- ConcreteClassA
+    AbstractClass <|-- ConcreteClassB

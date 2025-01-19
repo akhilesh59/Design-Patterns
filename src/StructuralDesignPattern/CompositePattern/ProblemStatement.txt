@@ -1,0 +1,2 @@
+Imagine you are building a project management system where tasks can be either simple tasks or a collection
+of tasks (subtasks) forming a larger task.

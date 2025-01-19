@@ -1,0 +1,28 @@
+classDiagram
+    class Creator {
+        <<abstract>>
+        +createProduct() Product
+        +someOperation() void
+    }
+    class ConcreteCreatorA {
+        +createProduct() Product
+    }
+    class ConcreteCreatorB {
+        +createProduct() Product
+    }
+    class Product {
+        <<interface>>
+        +doStuff() void
+    }
+    class ConcreteProductA {
+        +doStuff() void
+    }
+    class ConcreteProductB {
+        +doStuff() void
+    }
+    Creator <|-- ConcreteCreatorA
+    Creator <|-- ConcreteCreatorB
+    Product <|.. ConcreteProductA
+    Product <|.. ConcreteProductB
+    ConcreteCreatorA --> ConcreteProductA
+    ConcreteCreatorB --> ConcreteProductB

@@ -1,0 +1,19 @@
+classDiagram
+    class Strategy {
+        <<interface>>
+        +execute(data)
+    }
+    class ConcreteStrategyA {
+        +execute(data)
+    }
+    class ConcreteStrategyB {
+        +execute(data)
+    }
+    class Context {
+        -strategy: Strategy
+        +setStrategy(Strategy)
+        +executeStrategy(data)
+    }
+    Strategy <|.. ConcreteStrategyA
+    Strategy <|.. ConcreteStrategyB
+    Context o-- Strategy

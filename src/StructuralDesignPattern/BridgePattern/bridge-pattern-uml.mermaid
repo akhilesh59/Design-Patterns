@@ -1,0 +1,23 @@
+classDiagram
+    class Abstraction {
+        -implementation: Implementation
+        +operation() void
+    }
+    class RefinedAbstraction {
+        +operation() void
+        +newOperation() void
+    }
+    class Implementation {
+        <<interface>>
+        +operationImpl() void
+    }
+    class ConcreteImplementationA {
+        +operationImpl() void
+    }
+    class ConcreteImplementationB {
+        +operationImpl() void
+    }
+    Abstraction <|-- RefinedAbstraction
+    Abstraction o-- Implementation
+    Implementation <|.. ConcreteImplementationA
+    Implementation <|.. ConcreteImplementationB

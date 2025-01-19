@@ -1,0 +1,19 @@
+classDiagram
+    class Facade {
+        -subsystem1: Subsystem1
+        -subsystem2: Subsystem2
+        -subsystem3: Subsystem3
+        +operation()
+    }
+    class Subsystem1 {
+        +operation1()
+    }
+    class Subsystem2 {
+        +operation2()
+    }
+    class Subsystem3 {
+        +operation3()
+    }
+    Facade --> Subsystem1
+    Facade --> Subsystem2
+    Facade --> Subsystem3

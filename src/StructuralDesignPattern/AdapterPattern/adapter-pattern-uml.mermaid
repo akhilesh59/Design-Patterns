@@ -1,0 +1,18 @@
+classDiagram
+    class Target {
+        <<interface>>
+        +request() void
+    }
+    class Adapter {
+        -adaptee: Adaptee
+        +request() void
+    }
+    class Adaptee {
+        +specificRequest() void
+    }
+    class Client {
+        +operation(Target)
+    }
+    Target <|.. Adapter
+    Adapter --> Adaptee
+    Client --> Target

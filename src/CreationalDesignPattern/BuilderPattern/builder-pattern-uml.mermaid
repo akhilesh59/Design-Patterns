@@ -1,0 +1,31 @@
+classDiagram
+    class Builder {
+        <<interface>>
+        +reset() void
+        +buildStepA() void
+        +buildStepB() void
+        +buildStepC() void
+        +getResult() Product
+    }
+    class ConcreteBuilder {
+        -product: Product
+        +reset() void
+        +buildStepA() void
+        +buildStepB() void
+        +buildStepC() void
+        +getResult() Product
+    }
+    class Director {
+        -builder: Builder
+        +setBuilder(Builder)
+        +constructBasicProduct()
+        +constructFullProduct()
+    }
+    class Product {
+        -parts: List
+        +addPart()
+        +listParts()
+    }
+    Builder <|.. ConcreteBuilder
+    Director o-- Builder
+    ConcreteBuilder --> Product

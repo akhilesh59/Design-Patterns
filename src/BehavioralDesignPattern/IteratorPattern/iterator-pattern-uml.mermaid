@@ -1,0 +1,25 @@
+classDiagram
+    class Iterator {
+        <<interface>>
+        +hasNext() bool
+        +next() Object
+        +current() Object
+    }
+    class ConcreteIterator {
+        -collection: Collection
+        -position: int
+        +hasNext() bool
+        +next() Object
+        +current() Object
+    }
+    class Aggregate {
+        <<interface>>
+        +createIterator() Iterator
+    }
+    class ConcreteAggregate {
+        -items: Array
+        +createIterator() Iterator
+    }
+    Iterator <|.. ConcreteIterator
+    Aggregate <|.. ConcreteAggregate
+    ConcreteAggregate --> ConcreteIterator
