@@ -1,0 +1,5 @@
+Suppose we have an application that needs to send email notifications to the concerned users.
+Currently, we are using our in-house "EmailNotificationService", but now we want to use service like "SendGrid".
+However, the interface for out in-house system and the SendGrid service are incompatible.
+
+Solve this problem using Adapter pattern.

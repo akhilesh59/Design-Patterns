@@ -72,7 +72,7 @@ public class SugarDecorator extends CoffeeDecorator {
     }
 }
 
-public class Cafe {
+public class CafeWithDecorator {
     public static void main(String[] args) {
         // Plain Coffee
         Coffee coffee = new PlainCoffee();

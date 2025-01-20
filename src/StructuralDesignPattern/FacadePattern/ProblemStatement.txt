@@ -1,3 +1,8 @@
+Problem Statement 1:
+Implement a API Gateway service by using which the Client can connect with different Microservices.
+
+
+Problem Statement 2:
 Let’s consider a hotel. This hotel has a hotel keeper. There are a lot of restaurants inside the hotel
 e.g. Veg restaurants, Non-Veg restaurants, and Veg/Non Both restaurants.
 You, as a client want access to different menus of different restaurants.

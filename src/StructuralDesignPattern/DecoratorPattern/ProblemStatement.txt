@@ -1,4 +1,2 @@
-Suppose we are building a coffee shop application where customers can order different types of coffee.
-Each coffee can have various optional add-ons such as milk, sugar, whipped cream, etc.
-We want to implement a system where we can dynamically add these add-ons to a coffee order without
-modifying the coffee classes themselves.
+Pizza Ordering System: Initially, we just have plain pizza but now we want to add options such as cheese, olives, tomatoes
+and mushrooms without modifying the existing pizza class or creating multiple subclasses.

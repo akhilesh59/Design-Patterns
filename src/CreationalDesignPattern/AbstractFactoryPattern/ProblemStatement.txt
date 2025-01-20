@@ -1,2 +1,4 @@
-You need to create families of related or dependent objects without specifying their concrete classes,
-such as creating different types of furniture.
+You are designing a system that involves different families of related products. Specifically, you need to create different
+vehicle types based on regions (e.g., US or EU). Each region has different types of vehicles (e.g., a Car and a Bike).
+The system should allow for easy expansion to other regions without changing the existing code.
+
